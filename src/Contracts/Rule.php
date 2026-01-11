@@ -24,11 +24,11 @@ interface Rule
      * Check if the given field passes the validation rule.
      *
      * @param string $field Name of the field being validated.
-     * @param string $value Value of the field being validated.
+     * @param mixed $value Value of the field being validated.
      * @param array $data All validation data.
      * @return bool True if the validation rule passes, false otherwise.
      */
-    public function passes(string $field, string $value, array $data): bool;
+    public function passes(string $field, mixed $value, array $data): bool;
 
     /**
      * Get the validation error message for the rule.
